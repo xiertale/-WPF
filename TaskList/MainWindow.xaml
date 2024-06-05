@@ -1,0 +1,27 @@
+﻿<Window x:Class="MyTasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyTasks"
+        mc:Ignorable="d"
+        Title="Список задач" Height="466" Width="829">
+    <Grid>
+        <ListBox Name="DataList" HorizontalAlignment="Left" Height="278" Margin="15,0,0,0" VerticalAlignment="Center" Width="229" SelectionChanged="DataList_SelectionChanged"/>
+        <Button Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Height="32" Margin="15,383,0,0" VerticalAlignment="Top" Width="93" Click="AddButton_Click"/>
+        <ComboBox Name="SelectTypeSort" HorizontalAlignment="Left" Height="32" Margin="15,41,0,0" VerticalAlignment="Top" Width="116" SelectedIndex="0" Padding="5, 6, 0, 0" SelectionChanged="ComboBox_SelectionChanged">
+            <TextBlock>По дате</TextBlock>
+            <TextBlock>По названию</TextBlock>
+        </ComboBox>
+        <Button Name="Remove" Content="Удалить" HorizontalAlignment="Left" Height="32" Margin="152,383,0,0" VerticalAlignment="Top" Width="92" Click="Remove_Click"/>
+        <TextBlock Name="Title" HorizontalAlignment="Center" Height="35" Margin="0,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280" Background="#FFEBEBEB" FontSize="15"/>
+        <TextBlock Name="Discription" HorizontalAlignment="Center" Height="163" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="280" Background="#FFEBEBEB"/>
+        <Button Name="Edit" Content="Изменить" HorizontalAlignment="Center" Height="32" Margin="0,314,0,0" VerticalAlignment="Top" Width="92" Click="Edit_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="299" Margin="562,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="223"/>
+        <Label Content="Срочно!" HorizontalAlignment="Left" Margin="567,47,0,0" VerticalAlignment="Top" Height="26" Width="128"/>
+        <TextBlock Name="Remember" HorizontalAlignment="Left" Height="252" Margin="574,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+
+
+
+    </Grid>
+</Window>
